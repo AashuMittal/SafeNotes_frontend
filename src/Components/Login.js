@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link, useNavigate } from "react-router-dom"; // Change Navigate to useNavigate
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
@@ -65,6 +65,7 @@ const Login = () => {
     if (auth) {
       navigate("/"); // Use navigate here as well
     }
+    fetchApi();
   }, [navigate]); // Add navigate as a dependency
 
   return (
