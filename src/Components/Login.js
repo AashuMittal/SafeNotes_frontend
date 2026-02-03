@@ -22,6 +22,8 @@ const Login = () => {
     }
   };
 
+  console.log(data)
+
   const handleSubmit = async (e) => {
     e.preventDefault();
 
